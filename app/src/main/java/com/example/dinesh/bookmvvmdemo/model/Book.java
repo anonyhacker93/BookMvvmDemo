@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 // Created by Dinesh Kumar on 4/29/2019
 @Entity(tableName = "book_store")
 public class Book {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String name;
     private String authorName;
